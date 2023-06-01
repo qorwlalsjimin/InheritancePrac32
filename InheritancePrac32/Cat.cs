@@ -6,7 +6,7 @@ namespace InheritancePrac32
     /// 고양이 클래스
     /// </summary>
 
-    internal class Cat : Animal
+    public abstract class Cat : Animal
     {
         public Cat() : base(2) { }    
 
@@ -14,7 +14,7 @@ namespace InheritancePrac32
         { 
         }
 
-        public override void Eat()
+        public sealed override void Eat() //sealed: 더 이상 오버라이딩 할 수 없게 막음
         {
             Console.WriteLine("고양이: 자박자박 먹습니다");
         }
