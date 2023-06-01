@@ -8,6 +8,11 @@ namespace InheritancePrac32
 
     internal class Cat : Animal
     {
+        public Cat() : base(2) { }    
+
+        public Cat(int age) : base(age)
+        { 
+        }
 
         public void Meow()
         {

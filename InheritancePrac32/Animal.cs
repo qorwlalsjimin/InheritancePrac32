@@ -9,6 +9,11 @@ namespace InheritancePrac32
 
         public Animal() { this.Age = 0; } //public 안 붙이면 private
 
+        public Animal(int age)
+        {
+            this.Age = age;
+        }
+
         public int Age { get; set; }
 
         public void Eat()
