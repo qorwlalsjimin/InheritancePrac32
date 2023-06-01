@@ -10,6 +10,11 @@ namespace InheritancePrac32
     {
         static void Main(string[] args)
         {
+            Dog dog = new Dog();
+            dog.Public();
+            //dog.Protected();
+            //dog.Private();
+
             List<Animal> Animals = new List<Animal>() { new Dog(), new Dog(), new Dog(), new Cat(), new Cat(), new Cat() }
 
             //List<Dog> Dogs = new List<Dog>() { new Dog(), new Dog(), new Dog() };
@@ -18,14 +23,14 @@ namespace InheritancePrac32
             // 이렇게도 함
             // List<Object> Things = new List<Object>() { new Dog(), new Dog(), new Dog() };
 
-            foreach (var item in Dogs)
+            foreach (var item in Animals)
             {
                 item.Eat();
                 item.Sleep();
                 item.Bark();
                  
             }
-            foreach (var item in Cats)
+            foreach (var item in Animals)
             {
                 item.Eat();
                 item.Sleep();
