@@ -16,7 +16,7 @@ namespace InheritancePrac32
 
         public int Age { get; set; }
 
-        public void Eat()
+        public virtual void Eat()
         {
             Console.WriteLine("냠냠 먹습니다.");
         }

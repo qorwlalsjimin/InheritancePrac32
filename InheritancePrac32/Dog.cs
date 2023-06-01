@@ -11,8 +11,13 @@ namespace InheritancePrac32
         public string Color { get; set; }
         public Dog()
         {
-            this.Age = 0; 
+            this.Age = 0;
         }
+        public new void Eat()
+        {
+            Console.WriteLine("강아지: 허겁지겁 먹습니다.");
+        }
+
 
         public void Bark()
         {
