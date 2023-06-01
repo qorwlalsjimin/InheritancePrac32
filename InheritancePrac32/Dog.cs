@@ -20,17 +20,12 @@ namespace InheritancePrac32
 
         public void Eat()
         {
-            throw new NotImplementedException();
-        }
-
-        public void Meow()
-        {
-            throw new NotImplementedException();
+            Console.WriteLine("냠냠 먹습니다.");
         }
 
         public void Sleep()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("쿨쿨 잠을 잡니다.");
         }
     }
 }
