@@ -2,11 +2,12 @@
 
 namespace InheritancePrac32
 {
-    public class Dog
+    public class Dog : Animal
     {
 
 
-        public int Age { get; set; }    
+        //public int Age { get; set; }   //하이딩!!
+
         public string Color { get; set; }
         public Dog()
         {
@@ -16,16 +17,6 @@ namespace InheritancePrac32
         public void Bark()
         {
             Console.WriteLine("왈왈 짓습니다.");
-        }
-
-        public void Eat()
-        {
-            Console.WriteLine("냠냠 먹습니다.");
-        }
-
-        public void Sleep()
-        {
-            Console.WriteLine("쿨쿨 잠을 잡니다.");
         }
     }
 }
