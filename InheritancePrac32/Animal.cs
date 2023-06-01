@@ -7,6 +7,7 @@ namespace InheritancePrac32
         /// 고양이 나이
         /// </summary>
 
+        public Animal() { this.Age = 0; } //public 안 붙이면 private
 
         public int Age { get; set; }
 

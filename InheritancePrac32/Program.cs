@@ -15,7 +15,7 @@ namespace InheritancePrac32
             //dog.Protected();
             //dog.Private();
 
-            List<Animal> Animals = new List<Animal>() { new Dog(), new Dog(), new Dog(), new Cat(), new Cat(), new Cat() }
+            List<Animal> Animals = new List<Animal>() { new Dog(), new Dog(), new Dog(), new Cat(), new Cat(), new Cat() };
 
             //List<Dog> Dogs = new List<Dog>() { new Dog(), new Dog(), new Dog() };
             //List<Cat> Cats = new List<Cat>() { new Cat(), new Cat(), new Cat() };
@@ -27,15 +27,14 @@ namespace InheritancePrac32
             {
                 item.Eat();
                 item.Sleep();
-                item.Bark();
-                 
-            }
-            foreach (var item in Animals)
-            {
-                item.Eat();
-                item.Sleep();
-                item.Meow();
 
+                if(item is Dog)
+                {
+                    ((Dog)item).Bark(); //실행 오류
+                }else if(item is Cat) {
+                    ((Cat)item).Meow();
+                }
+                 
             }
         }
     }
