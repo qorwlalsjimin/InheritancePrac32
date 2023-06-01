@@ -28,11 +28,18 @@ namespace InheritancePrac32
                 item.Eat();
                 item.Sleep();
 
-                if(item is Dog)
+                var _dog = item as Dog;
+                if(_dog != null) { _dog.Bark(); }
+
+                var _cat = item as Cat;
+                if(_cat != null) { _cat.Meow(); }
+
+                if (item is Dog)
                 {
                     ((Dog)item).Bark(); //실행 오류
-                }else if(item is Cat) {
-                    ((Cat)item).Meow();
+                }else if(item is Cat)
+                {
+                    ((Cat)item).Meow(); //실행 오류
                 }
                  
             }
